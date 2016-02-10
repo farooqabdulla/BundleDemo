@@ -8,6 +8,7 @@
     <link href="~/Content/Site.css" rel="stylesheet" /> 
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <%: System.Web.Optimization.Scripts.Render("~/Scripts/ThirdParty") %>
+    <%: System.Web.Optimization.Styles.Render("~/Styles/ThirdParty") %>
     <asp:PlaceHolder runat="server">        
         <script src="<%: ResolveUrl("~/Scripts/modernizr-2.6.2.js") %>"></script>
     </asp:PlaceHolder>
@@ -35,7 +36,8 @@
                                 <li><a id="registerLink" runat="server" href="~/Account/Register">Register</a></li>
                                 <li><a id="loginLink" runat="server" href="~/Account/Login">Log in</a></li>
                             </ul>
-                        </AnonymousTemplate>
+    
+                                                </AnonymousTemplate>
                         <LoggedInTemplate>
                             <p>
                                 Hello, <a runat="server" class="username" href="~/Account/Manage" title="Manage your account">

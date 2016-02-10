@@ -17,6 +17,11 @@ namespace WebApplication1
                                 "~/Scripts/jquery-ui-1.11.4.min.js");
 
             bundles.Add(thirdPartyScripts);
+
+            StyleBundle thirdPartyStyles = new StyleBundle("~/styles/ThirdParty");
+            thirdPartyStyles.Include("~/Content/bootstrap.min.js");
+
+            bundles.Add(thirdPartyStyles);
             BundleTable.EnableOptimizations = true;
         }
     }
